@@ -1,5 +1,4 @@
 import mysql.connector
-from mysql.connector import Error
 
 try:
     conexion=mysql.connector.connect(
@@ -7,10 +6,9 @@ try:
         user="root",
         password="",
         database="bd_notas"
-        )
+    )
     cursor=conexion.cursor(buffered=True)
 except:
-    print("En este momento no es posible comunicarse con el sistema, intentelo mas tarde...")
-
+    print(f"En este momento no posible comunicarse con el sistema, intentelo mas tarde ...") 
 
 
